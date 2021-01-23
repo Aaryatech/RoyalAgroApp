@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context="com.ats.royalagro.fragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvImageDemo"
+        android:fontFamily="@font/sofiapro_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="GreenField"
+        android:textSize="35sp" />
+
+    <TextView
+        android:fontFamily="@font/sofiapro_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Agro Services"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>

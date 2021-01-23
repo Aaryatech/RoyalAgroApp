@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/edCustom_Remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="start"
+        android:hint="Remark"
+        android:lines="4"
+        android:layout_margin="10dp"
+        android:maxLines="4" />
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnCustom_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

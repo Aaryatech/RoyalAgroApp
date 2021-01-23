@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ats.royalagro.fragment.PlotDetailsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/llBtnPanelPlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlot_Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/sofiapro_bold"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/colorWhite"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnPlot_Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/sofiapro_bold"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="@color/colorWhite"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llBtnPanelPlot"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_GatNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Gat No"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_PlotNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Plot No"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_PlotArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Plot Area"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_OwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Plot Owner Name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_Relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Relation With Land Owner"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLabelDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/sofiapro_bold"
+                android:text="Relation With Land Owner"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spPlot_Relation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:typeface="serif"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_Aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Aadhar Card Number"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/edPlot_PAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="PAN Card Number (ABCDE1234F)"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_WaterRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Water Resource"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:typeface="serif">
+
+                <EditText
+                    android:id="@+id/edPlot_WaterResRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:hint="Water Resource Remark"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
